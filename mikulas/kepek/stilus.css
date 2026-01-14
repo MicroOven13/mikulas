@@ -10,6 +10,9 @@ body {
 aside img {
     width: 100%;
 }
+aside {
+    grid-area: as;
+}
 main {
     width: 80%;
     max-width: 1000px;
@@ -17,7 +20,10 @@ main {
     background-color: rgb(255,255,230);
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: ;
+    grid-template-areas: "h h"
+    "n n"
+    "as a"
+    "f f";
 }
 header {
     grid-area: h;
@@ -57,9 +63,17 @@ article {
     grid-area: a;
     text-align: justify;
     font-weight: 10px;
+    padding: 5px;
 }
 article h2 {
     font-weight: 15px;
     color:brown;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+article img {
+    float: right;
+    padding: 5px;
+}
+footer {
+    grid-area: f;
 }
