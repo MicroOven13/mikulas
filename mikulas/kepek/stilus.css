@@ -50,7 +50,6 @@ nav {
 }
 nav a:hover {
     color: white;
-    background-color: green;
 }
 nav a {
     text-decoration: none;
@@ -79,4 +78,7 @@ nav ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+nav li:hover{
+    background-color: green;
 }
