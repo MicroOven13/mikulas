@@ -42,8 +42,6 @@ nav {
     grid-area: n;
     background-color: red;
     height: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     border-top: 1px;
     border-bottom: 1px;
     padding: 5px;
@@ -76,4 +74,9 @@ article img {
 }
 footer {
     grid-area: f;
+}
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
